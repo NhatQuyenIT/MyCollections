@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Báo cáo Thư viện</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Load font awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" crossorigin="anonymous">
+
+    <!-- Chart JS -->
+    <!-- Import lib -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <!-- End import lib -->
+
+    <!-- Sweet Alert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Báo cáo tình hình mượn sách</h1>
+        <form id="borrow-report-form">
+            <div class="card-content">
+                <div class="timTheoNgay" id="datetextfilter">
+                    Từ ngày: <input type="date" id="fromDate1">
+                    Đến ngày: <input type="date" id="toDate1">
+                    <button id="Filter1" type="button" onclick="locMuonSachTheoKhoangNgay()"><i class="fa fa-filter" aria-hidden="true"></i> Lọc</button>
+                </div>
+            </div>
+            <table id="borrow-table">
+                <thead>
+                    <tr>
+                        <th>STT</th>
+                        <th>Mã Sách</th>
+                        <th>Tên Sách</th>
+                        <th>Ngày mượn</th>
+                        <th>Ngày trả</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Rows will be added here dynamically -->
+                </tbody>
+            </table>
+            <button type="button" onclick="addBorrowRow()">Thêm dòng</button>
+        </form>
+
+        <h1>Báo cáo tình hình nhập sách</h1>
+        <form id="import-report-form">
+            <div class="card-content">
+                <div class="timTheoNgay" id="datetextfilter">
+                    Từ ngày: <input type="date" id="fromDate2">
+                    Đến ngày: <input type="date" id="toDate2">
+                    <button id="Filter2" type="button" onclick="locNhapSachTheoKhoangNgay()"><i class="fa fa-filter" aria-hidden="true"></i> Lọc</button>
+                </div>
+            </div>
+            <table id="import-table">
+                <thead>
+                    <tr>
+                        <th>STT</th>
+                        <th>Mã Sách</th>
+                        <th>Tên Sách</th>
+                        <th>Tác giả</th>
+                        <th>Thể loại</th>
+                        <th>Ngày Nhập</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Rows will be added here dynamically -->
+                </tbody>
+            </table>
+            <button type="button" onclick="addImportRow()">Thêm dòng</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+</head>
+
+<body>
+    <div class="files">
+        <form>
+            <table class="table table-striped table-hover">
+                <thead>
+                    <tr>
+                        <th>Download</th>
+                        <th>FileName</th>
+                        <th>Size[byte]</th>
+                        <th>Parents</th>
+                        <th>Updated</th>
+                        <th>Created</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <? for (var i = 0; i < data.length; i++) { ?>
+                        <tr>
+                            <td>
+                                <input type="checkbox" id="checkbox" name="fileId" value="<?= data[i].file_id  ?>" />
+                            </td>
+                            <td>
+                                <?= data[i].file_name ?>
+                            </td>
+                            <td>
+                                <?= data[i].file_size ?>
+                            </td>
+                            <td>
+                                <?= data[i].folder_tree ?>
+                            </td>
+                            <td>
+                                <?= data[i].file_updated ?>
+                            </td>
+                            <td>
+                                <?= data[i].file_created ?>
+                            </td>
+                        </tr>
+                        <? } ?>
+                </tbody>
+            </table>
+            <div class="allchk">
+                <input type="checkbox" id="allCheck01">
+                <label for="allCheck01">Check All</label>
+            </div>
+            <input type="button" class="create" value="Download" onclick="google.script.run.withSuccessHandler(executeDownload).getparams(this.parentNode)">
+        </form>
+    </div>
+    <a id="dl" target="_blank" href="#"></a>
+</body>
+
+<script>
+$(function() {
+    $('.table tr').click(function(event) {
+        if (event.target.type !== 'checkbox') {
+            $(':checkbox', this).trigger('click');
+        }
+    });
+
+    $('.allchk input').click(function() {
+        var files = $('.files').find('input');
+        if ($(this).is(':checked')) {
+            $(files).prop('checked', true);
+        } else {
+            $(files).prop('checked', false);
+        }
+    });
+});
+
+function executeDownload(base64dat) {
+    $("#dl").prop("href", window.URL.createObjectURL(toBlob(base64dat))).prop("download", "dl_" + getfmtDate() + ".zip")[0].click();
+}
+
+function toBlob(base64) {
+    var bin = atob(base64.replace(/^.*,/, ''));
+    var buffer = new Uint8Array(bin.length);
+    for (var i = 0; i < bin.length; i++) {
+        buffer[i] = bin.charCodeAt(i);
+    }
+    try {
+        var blob = new Blob([buffer.buffer], {
+            type: 'application/zip'
+        });
+    } catch (e) {
+        return false;
+    }
+    return blob;
+}
+
+function getfmtDate() {
+    var dt = new Date();
+    return dt.getFullYear().toString() +
+        cd((dt.getMonth() + 1).toString()) +
+        cd(dt.getDate().toString()) +
+        "_" +
+        cd(dt.getHours().toString()) +
+        cd(dt.getMinutes().toString()) +
+        cd(dt.getSeconds().toString());
+};
+
+function cd(dat) {
+    return dat.length == 1 ? "0" + dat : dat;
+};
+</script>
+
+</html>

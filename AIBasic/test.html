@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /********************************************************
+         * Luật 1: Nếu VX đầy thì đổ VX đi                    
+         * Luật 2: Nếu VY rỗng thì đổ đầy nước cho bình 2    
+         * Luật 3: Nếu VX không đầy và VY không rỗng thì trút 
+         * nước từ VY sang VX cho đến khi VX đầy
+         ********************************************************/
+
+        let binh1 = 7;
+        let binh2 = 4;
+        let luongNuocCanLay = 5;
+
+        // Vx là binh1 và Vy là binh2
+        function dongnuoc(Vx, Vy, z) {
+            let x = 0, y = 0; // lượng nước hiện có trong bình 1 và bình 2
+            let times = 0; // số lần thực hiện
+            let limit_countdown = 150; // giới hạn số lần thực hiện
+
+            while (x !== z && y !== z) {
+                if (x === Vx) {
+                    x = 0;
+                    times++;
+                    console.log(`Bước ${times}: Luật 1: Bình "${Vx} lít" đầy, đổ bình này đi => ${x} - ${y}`);
+                }
+                if (y === 0) {
+                    y = Vy;
+                    times++;
+                    console.log(`Bước ${times}: Luật 2: Bình "${Vy} lít" rỗng, đổ đầy nước cho bình này => ${x} - ${y}`);
+                }
+                if (y > 0) {
+                    let k = Math.min(Vx - x, y); // k là lượng nước có thể trút từ bình 2 sang bình 1
+                    x += k;
+                    y -= k;
+                    times++;
+                    console.log(`Bước ${times}: Luật 3: Bình "${Vx} lít" không đầy và bình "${Vy} lít" không rỗng => trút nước từ bình ${Vy} sang ${Vx} => ${x} - ${y}`);
+                }
+
+                limit_countdown--;
+                if (limit_countdown < 0) {
+                    console.warn("Vượt quá số lần giới hạn thực hiện!!!");
+                    break;
+                }
+            }
+
+            if (limit_countdown >= 0) {
+                console.warn(`Hoàn Thành sau ${times} bước`);
+            }
+
+            return 0;
+        }
+
+        // Gọi hàm dongnuoc để thực hiện mô phỏng
+        dongnuoc(binh1, binh2, luongNuocCanLay);
+    </script>
+</body>
+</html>

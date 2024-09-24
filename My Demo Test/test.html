@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript" language="javascript">
+        var qpt = "QualityPointTechnologies";
+        var result1 = qpt.substring(7,8); //start: 7, end: 8 -> KQ1: P
+        var result2 = qpt.substr(7,5);// start: 7, length: 5 -> KQ2: Point
+        document.write(result1);
+        document.write(result2);
+    </script>
+
+<h3>Which of the following is correct CSS syntex for using font property?</h3>
+  a) <p style="font:  italic, bold, 15px;">....</p>
+  b) <p style="font-style:  italic font-weight: bold font-size: 15px;">....</p>
+  c) <p style="font:  italic bold 15px;">....</p>
+  d) None of the above
+
+
+<img src="cat.png" alt="Cat-Picture" class="my-styles" id="mainpic">
+img {
+    /* CSS styles for img tag */
+  }
+  #mainpic.my-styles {
+    /* CSS styles for the element with the ID "mainpic" and the class "my-styles" */
+  }
+  #mainpic {
+    /* CSS styles for the element with the ID "mainpic" */
+  }
+  .my-styles { 
+    /* CSS styles for elements with the class "my-styles" */
+  }
+Ưu tiên nằm ngay bên trong thẻ tag HTML <> </>, nếu không định nghĩa style nào trực tiếp bên trong thẻ tag thì trong trường hợp này, đoạn CSS đầu tiên áp dụng cho phần tử có cả ID "mainpic" và class "my-styles" hoặc chỉ mỗi ID "mainpic". Nếu không có phần tử nào như vậy, sẽ áp dụng đoạn CSS cho các phần tử có class "my-styles". Cuối cùng, đoạn CSS sẽ áp dụng cho tất cả các thẻ <img>
+
+<!-- Thêm ô ngày/tháng/năm sinh -->
+<div class="input-box">
+  <span class="icon">
+      <ion-icon name="calendar"></ion-icon>
+  </span>
+  <input type="date" name="dob" id="dob" required>
+  <label for="dob">Date of Birth</label>
+</div>
+<!-- Thêm ô số điện thoại -->
+<div class="input-box">
+  <span class="icon">
+      <ion-icon name="call"></ion-icon>
+  </span>
+  <input type="tel" name="phone" id="phone" required>
+  <label for="phone">Phone</label>
+</div>
+<!-- Thêm ô giới tính -->
+<div class="input-box">
+  <span class="icon">
+      <ion-icon name="male-female"></ion-icon>
+  </span>
+  <label for="gender">Gender:</label>
+  <input type="radio" name="gender" id="male" value="male">
+  <label for="male">Male</label>
+  <input type="radio" name="gender" id="female" value="female">
+  <label for="female">Female</label>
+</div>
+
+</body>
+</html>

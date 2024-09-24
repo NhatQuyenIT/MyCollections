@@ -1,0 +1,39 @@
+Video Java (Spring boot Core MVC) dùng để tham khảo nâng cao:
+https://www.youtube.com/results?search_query=%5BKh%C3%B3a+h%E1%BB%8Dc+s%E1%BB%AD+d%E1%BB%A5ng+SQL+server%5D
+https://www.youtube.com/watch?v=aqZqND2fRoY&list=PLW1k06REn7HuSn1QSa14e_XPiKT9zLEL6
+(https://laptrinhjavaweb.com/hoc-spring-boot-viet-api-web-service-185)
+https://www.youtube.com/watch?v=Sankul76ebs&list=PLZusWOyEknKxUlNczNj7-ko9docmwjCKK
+https://www.youtube.com/watch?v=NpZDy-xTGg8&list=PLn9lhDYvf_3HS5RvfAfH4g1XHUN1gapFV&index=88
+https://www.youtube.com/@dieptv.official
+https://www.youtube.com/@TITVvn (https://titv.vn/)
+https://www.youtube.com/@HOCLAPTRINH/videos [rất hữu ich]
+https://timoday.edu.vn/chuong-trinh-quan-ly-sinh-vien-bang-java/
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+https://www.studocu.com/vn/document/truong-dai-hoc-su-pham-ky-thuat-thanh-pho-ho-chi-minh/ky-thuat-so/bao-cao-do-an-bao-cao-do-an/36663645
+https://www.studocu.com/vn/document/truong-dai-hoc-tai-nguyen-va-moi-truong-ha-noi/cong-nghe-phan-mem/nhom-2-do-an-hdt-ung-dung-java-su-dung-netbeans-phan-mem-quan-ly-kho-thuc-pham/37256334
+https://www.studocu.com/vn/document/truong-dai-hoc-dai-nam/ki-nang-mem/do-an-nhom-1-do-an-mon-hoc/41237638
+https://www.studocu.com/vn/document/truong-dai-hoc-tai-chinh-marketing/tin-hoc-dai-cuong/do-an-java-do-an-mon-lap-trinh-java/57351783
+-------------------------------------
+Đồ án web:
+https://www.bing.com/search?q=%c4%91%e1%bb%93+%c3%a1n+web+github&qs=n&sp=-1&lq=0&pq=%c4%91%e1%bb%93+%c3%a1n+web+githu&sc=10-15&sk=&cvid=29126DFC930845A5B301AA0A5B548DF5&ghsh=0&ghacc=0&ghpl=&FPIG=07058DB84C1745898C96E21B26E28F2A&first=1&FORM=PQRE
+https://www.bing.com/search?q=%C4%90%E1%BB%93+%C3%A1n+website+b%C3%A1n+%C4%90%E1%BB%93ng+h%E1%BB%93+github&qs=n&form=QBRE&sp=-1&lq=0&pq=%C4%91%E1%BB%93+%C3%A1n+website+b%C3%A1n+%C4%91%E1%BB%93ng+h%E1%BB%93+githu&sc=0-31&sk=&cvid=0E5E321185E04866A36B536861A4EBED&ghsh=0&ghacc=0&ghpl=
+https://github.com/Phong-Kaster/PTIT-Lap-Trinh-Web
+https://github.com/18120211/WebCTT2
+https://github.com/hienlt0610/mvc-ban-hang
+https://github.com/ptudweb-lab/project
+https://github.com/HoCongHau/DoAnWeb01
+https://github.com/olivervinh/Do-an-tot-nghiep *****
+https://github.com/minhdoan1510/FlightTicketManagement ******
+
+--------------------------------------------
+https://t3h.edu.vn/
+https://csc.edu.vn/lap-trinh-va-csdl/Lap-trinh-vien-ma-nguon-mo-PHP_108 (có đủ file pdf)
+https://csc.edu.vn/lap-trinh-va-csdl/Lap-trinh-vien-Java_106 (còn thiếu  module 4)
+https://csc.edu.vn/lap-trinh-va-csdl/Lap-trinh-vien-JavaScript_148 (đã có đủ)
+
+https://cuuduongthancong.com/sjdt/lap-trinh-web/nguyen-huy-khanh/dh-khoa-hoc-tu-nhien-hcm?src=subject
+https://cuuduongthancong.com/sjdt/thiet-ke-va-lap-trinh-web/nguyen-duc-huy/dh-khoa-hoc-tu-nhien-hcm?src=subject
+https://www.coursera.org/
+https://www.py4e.com/
+https://www.quora.com/Do-you-suffer-in-hell
+https://voz.vn/t/thim-nao-hoc-dh-khtn-cho-em-hoi-phat.218766/
